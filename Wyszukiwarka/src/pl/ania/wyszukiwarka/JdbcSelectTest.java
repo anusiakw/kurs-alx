@@ -16,11 +16,13 @@ public class JdbcSelectTest{
 	 
 	         // Step 2: Allocate a 'Statement' object in the Connection
 	         Statement stmt = conn.createStatement();
+			
 	      ) {
 	         // Step 3: Execute a SQL SELECT query, the query result
 	         //  is returned in a 'ResultSet' object.
 	         String strSelect = "select title, price, qty from books";
 	         System.out.println("The SQL query is: " + strSelect); // Echo For debugging
+	         System.out.println("Ania");
 	         System.out.println();
 	 
 	         ResultSet rset = stmt.executeQuery(strSelect);
